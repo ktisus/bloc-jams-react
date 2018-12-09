@@ -19,7 +19,7 @@ class App extends Component {
         <main>
           <Route exact path="/" component={Landing} />
           <Route path="/library" component={Library} />
-          <Route path="/album" component={Album} />
+          <Route path="/album/:slug" component={Album} />
         </main>
       </div>
     );
@@ -27,3 +27,5 @@ class App extends Component {
 }
 
 export default App;
+
+// a slug is text that's been formatted to be acceptable in a different format. In this case, the slug will be a version of the album title that's formatted to work well in a URL. It will also serve as a unique id (identifier) for each album.
