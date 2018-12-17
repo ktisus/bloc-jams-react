@@ -74,14 +74,16 @@ class Album extends Component {
   }
 
   handleIcon(song, index) {
-    if (this.state.isHovering !== song) {
-      return (<td>{index + 1}</td>);
-    } else if (this.state.isHovering === song && this.state.isPlaying !== true) {
-      return (<span  className="ion-play"></span>);
-    } else if (this.state.isPlaying === true) {
+    if (this.state.isPlaying && this.state.currentSong === song) {
       return (<span className="ion-pause"></span>);
-
-    };
+    } else if (this.state.isHovering !== song) {
+      return (<td>{index + 1}</td>);
+    } else if (this.state.isHovering === song && this.state.currentSong !== song) {
+      return (<span className="ion-play"></span>);
+    } // else if (this.state.isPlaying === true && this.state.isHovering === song) {
+    //  return (<span className="ion-pause"></span>);
+  //  };
+    return (<span className="ion-play"></span>);
   }
 
    render() {
