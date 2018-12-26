@@ -164,7 +164,7 @@ class Album extends Component {
                   onMouseLeave={() => this.handleMouseLeave(song)}>
                 <td>{this.handleIcon(song, index) }</td>
                 <td key="title">{song.title}</td>
-                <td key="duration">{song.duration}</td>
+                <td key="duration" >{this.formatTime(song.duration)} </td>
               </tr>
                )
 
@@ -176,7 +176,7 @@ class Album extends Component {
             isPlaying={this.state.isPlaying}
             currentSong={this.state.currentSong}
             currentTime={this.audioElement.currentTime}
-            duration={this.audioElement.duration}
+            duration={ this.audioElement.duration }
             currentVolume={ this.audioElement.currentVolume }
             formatTime={ (time) => this.formatTime(time)}
             handleSongClick={() => this.handleSongClick(this.state.currentSong)}
