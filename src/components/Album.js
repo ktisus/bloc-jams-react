@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
+import './album.css';
 
 class Album extends Component {
   constructor(props) {
@@ -151,7 +152,7 @@ class Album extends Component {
             </div>
           </section>
           <table id="song-list">
-            <colgroup>
+            <colgroup className = "table-songs">
               <col id="song-number-column" />
               <col id="song-title-column" />
               <col id="song-duration-column" />
@@ -163,8 +164,9 @@ class Album extends Component {
                   onMouseEnter={() => this.handleMouseEnter(song)}
                   onMouseLeave={() => this.handleMouseLeave(song)}>
                 <td>{this.handleIcon(song, index) }</td>
-                <td key="title">{song.title}</td>
+                <td key="title" id="title">{song.title}</td>
                 <td key="duration" >{this.formatTime(song.duration)} </td>
+                {/* revise time at song list */}
               </tr>
                )
 
@@ -172,7 +174,7 @@ class Album extends Component {
 
             </tbody>
           </table>
-          <PlayerBar
+          <PlayerBar className ="player-bar"
             isPlaying={this.state.isPlaying}
             currentSong={this.state.currentSong}
             currentTime={this.audioElement.currentTime}

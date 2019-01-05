@@ -1,0 +1,79 @@
+.nav {
+  display: flex;
+}
+
+.App {
+  background: deepskyblue;
+}
+
+.landing {
+/*  display: flex; */
+}
+
+.selling-points {
+  display: flex;
+
+}
+
+.selling-points div {
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+.point {
+  flex: 1;
+  order: 1;
+}
+
+.point {
+  flex: 1;
+  order: 2;
+}
+
+.point {
+  flex: 1;
+  order: 3;
+}
+
+.point-title {
+
+}
+
+.player-bar {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.artist {
+  font-size: 50px;
+  margin: -10px;
+}
+
+.song {
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.library {
+  display: flex;
+  justify-content: space-around;
+}
+
+.album {
+  display: flex;
+  justify-content: space-around;
+}
+
+#album-cover-art {
+  margin: 5px 10px;
+}
+
+#album-title {
+  font-size: 30px;
+  margin: 10px;
+}
+
+#release-info {
+  font-size: 20px;
+  margin: 20px;
+}
