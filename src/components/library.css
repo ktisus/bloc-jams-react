@@ -1,0 +1,42 @@
+.library {
+  background-image: url("/assets/images/blurred_backgrounds/blur_bg_3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: 2em 4em 4em;
+}
+
+.album {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+
+}
+
+.album img {
+    height: 18em;
+}
+
+.album-info {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 1em;
+    color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+
+}
+
+@media all and (max-width: 480px) {
+  .album img {
+    height: 14em;
+  }
+
+  .album {
+    padding: 1em 1em 0;
+  }
+}

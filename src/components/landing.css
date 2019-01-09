@@ -1,0 +1,61 @@
+html {
+  font-size: 18px;
+}
+
+.hero-content{
+  background-image: url("/assets/images/blurred_backgrounds/blur_bg_3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-title {
+  font-family: "Lucida Console", Monaco, monospace;
+  letter-spacing: 8px;
+  font-size: 4rem;
+  font-weight: lighter;
+  text-shadow: rgb(58, 23,63) 1px 1px 0px;
+  padding-top: 9rem;
+}
+
+.selling-points {
+  display: flex;
+
+}
+
+.selling-points div {
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+.point {
+  flex: 1;
+  order: 1;
+}
+
+.point {
+  flex: 1;
+  order: 2;
+}
+
+.point {
+  flex: 1;
+  order: 3;
+}
+
+img.point  {
+  margin-bottom: 1.4rem;
+  height: 3rem;
+}
+
+
+.point-title {
+
+}
+
+@media all and (max-width: 480px) { }

@@ -1,79 +1,78 @@
-.nav {
-  display: flex;
-}
 
-.App {
-  background: deepskyblue;
-}
-
-.landing {
-/*  display: flex; */
-}
-
-.selling-points {
-  display: flex;
-
-}
-
-.selling-points div {
-  border: 1px #ccc solid;
-  padding: 10px;
-}
-
-.point {
-  flex: 1;
-  order: 1;
-}
-
-.point {
-  flex: 1;
-  order: 2;
-}
-
-.point {
-  flex: 1;
-  order: 3;
-}
-
-.point-title {
-
-}
-
-.player-bar {
-  margin: 0 auto;
-  padding: 10px;
-}
-
-.artist {
-  font-size: 50px;
-  margin: -10px;
-}
-
-.song {
-  border: 1px solid #000;
-  text-align: center;
-}
-
-.library {
+#song-list {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
+  text-align: center;
 }
 
 .album {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
+  background-image: url("/assets/images/blurred_backgrounds/blur_bg_3.jpg");
+  color: white;
+}
+
+.album-cover {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+
 }
 
 #album-cover-art {
-  margin: 5px 10px;
+  height: 18rem;
+}
+
+.album-details {
+  padding: 3rem;
+  text-align: left;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
 #album-title {
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 1em;
+  color: white;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.artist {
   font-size: 30px;
   margin: 10px;
 }
 
 #release-info {
   font-size: 20px;
-  margin: 20px;
+  margin: 10px;
+}
+
+@media all and (max-width: 830px) {
+  #album-info {
+   flex-direction: column;
+   margin: auto;
+ }
+
+ #album-cover-art {
+   height: 18rem;
+   width: 18rem;
+ }
+
+ #song-list {
+   flex-direction: column;
+   margin: auto;
+ }
+
+ .album-details {
+   padding: 1rem 1rem 0;
+ }
+}
+
+@media all and (max-width: 380px) {
+  #album-cover-art {
+    height: 14rem;
+    width: 14rem;
+  }
 }

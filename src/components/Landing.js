@@ -1,9 +1,11 @@
 import React from 'react';
+import './landing.css';
 
 const Landing = () => (
   <section className="landing">
+  <div className='hero-content'>
     <h1 className="hero-title">Turn the music up!</h1>
-
+  </div>
     <section className="selling-points">
       <div className="point">
         <h2 className="point-title">Choose your music</h2>
