@@ -7,16 +7,38 @@
   height: 40vmin;
 }
 
-.App-header {
-  background-color: yellow /* #282c34 */;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html {
+  font-size: 18px;
+  background-color: /* #602566 */ #E6E6FA ;
 }
+
+header nav {
+  background-color: transparent;
+  height: auto;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem 3rem;
+  align-items: center;
+}
+
+.head a:nth-child(2) {
+  text-decoration: none;
+  color: lightpink;
+  text-shadow: rgb(58, 23,63) 1px 1px 0px;
+  font-size: 2em;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.head a:nth-child(2):hover {
+  text-decoration: none;
+  color: #E93275;
+}
+
+
 
 .App-link {
   color: #61dafb;
